@@ -1,0 +1,179 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Logo Section */
+.logo img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.logo h2 {
+  font-size: 28px;
+  color: #fa0303;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  color: #e60505;
+}
+
+/* Title Section */
+.title h3 {
+  font-size: 18px;
+  color: #555;
+}
+
+.title p {
+  margin: 8px 0;
+  color: #777;
+}
+
+.title h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Card Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1d3557;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #457b9d;
+}
+
+/* Note Section */
+.note {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Query/Search Section */
+.query-section {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.query-section input[type="text"] {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.query-section input[type="text"]:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+.query-section .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  transition: color 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.relative:hover {
+  color: #e63946;
+  transform: translateY(-1%) scale(1);
+}
+
+.query-section input[type="text"]:hover {
+  border-color: #1d3557;
+  box-shadow: 0 0 5px rgba(29, 53, 87, 0.3);
+  background-color: #f0f4f8;
+  transform: translateY(-50%) scale(1.1);
+
+}
+
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .title h3 {
+    font-size: 16px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+}
+
+
